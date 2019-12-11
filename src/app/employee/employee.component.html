@@ -1,0 +1,30 @@
+
+<form [formGroup] = "registerForm" (ngSubmit)="postData(registerForm)" class="text-center border border-light p-5" >
+    <p class="h4 mb-4">Employee Forms</p>
+  
+<div class="form-row mb-4">
+    <div class="col">
+        <input type="text" formControlName="fName" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
+    </div>
+    <div class="col">
+        <input type="text" formControlName="lName" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
+    </div>
+</div>
+<button class="btn btn-info my-4 btn-block" type="submit">Sign in</button>
+
+<!-- <label> Enter Dept: 
+    <input type="text" [formControl]="dept">
+</label>
+<label> Enter Password: 
+    <input type="password" [formControl]="pwd">
+</label>
+<label> Confirm Password: 
+    <input type="password" [formControl]="cnfpwd">
+</label>
+<button> Submit</button>
+</form>
+<p>
+    Name :{{name.value}}
+    Dept :{{dept.value}}
+</p>
+ -->
